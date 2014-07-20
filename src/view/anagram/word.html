@@ -1,0 +1,40 @@
+{% extends "app.html" %}
+{% block content %}
+
+        <h1>Anagram</h1>
+        <p class="lead">An <a href="http://en.wikipedia.org/wiki/Anagram">Anagram</a> is a type of word play, the result of rearranging the letters of a word or phrase to produce a new word or phrase, using all the original letters exactly once [Wikipedia]
+
+	  <form action="{% url action="word" %}" method="post">
+	    <input name="word" placeholder="Word" />
+	    <input class="btn btn-lg btn-success" type="submit" />
+	  </form>
+
+	</p>
+
+	{% if words %}
+	Results:<br />
+	<table>
+	  {% for word in words %}
+	  <tr>
+	    <td>{{ word }}</td>
+	  </tr>
+	  {% endfor %}
+	</table>
+
+	<script type="text/javascript"><!--
+					   google_ad_client = "ca-pub-2729401952108622";
+					   google_ad_host = "ca-host-pub-1556223355139109";
+					   google_ad_host_channel = "L0001";
+					   /* top-twitter-users_sidebar-right-1_AdSense3_250x250_as */
+					   google_ad_slot = "9392963249";
+					   google_ad_width = 250;
+					   google_ad_height = 250;
+					   //-->
+	</script>
+	<script type="text/javascript"
+		src="//pagead2.googlesyndication.com/pagead/show_ads.js">
+	</script>
+
+	{% endif %}
+
+{% endblock %}

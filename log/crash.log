@@ -1,0 +1,22 @@
+2014-07-19 17:22:56 =ERROR REPORT====
+GET /greeting/hello [tips] 404 0ms2014-07-19 17:23:07 =ERROR REPORT====
+GET /greeting/hello [tips] 404 0ms2014-07-19 17:34:36 =ERROR REPORT====
+GET /anagram/perms [tips] 404 0ms2014-07-19 17:35:03 =ERROR REPORT====
+GET /anagram/a [tips] 404 0ms2014-07-19 17:38:53 =ERROR REPORT====
+GET /anagram/ [tips] 404 0ms2014-07-19 17:39:37 =ERROR REPORT====
+GET /anagram/anagram/page [tips] 404 0ms2014-07-19 17:39:46 =ERROR REPORT====
+GET /anagram/anagram/page [tips] 404 0ms2014-07-19 17:39:52 =ERROR REPORT====
+GET /anagram/anagram/WORD [tips] 404 0ms2014-07-19 17:39:57 =ERROR REPORT====
+GET /anagram/anagram/word(1 [tips] 404 0ms2014-07-19 17:40:00 =ERROR REPORT====
+GET /anagram/anagram/word/1 [tips] 404 0ms2014-07-19 17:45:36 =ERROR REPORT====
+GET /anagram/anagram/word/1 [tips] 404 0ms2014-07-19 18:00:28 =SUPERVISOR REPORT====
+     Supervisor: {<0.110.0>,poolboy_sup}
+     Context:    shutdown_error
+     Reason:     shutdown
+     Offender:   [{nb_children,8},{name,boss_session_controller},{mfargs,{boss_session_controller,start_link,[[{name,{local,boss_session_pool}},{worker_module,boss_session_controller},{size,20},{max_overflow,40},{adapter,boss_session_adapter_mock},{session_exp_time,525600},{session_key,"_boss_session"}]]}},{restart_type,temporary},{shutdown,5000},{child_type,worker}]
+
+2014-07-19 18:01:21 =ERROR REPORT====
+GET /anagram/ [tips] 404 0ms2014-07-19 18:01:33 =ERROR REPORT====
+GET /anagram/ [tips] 404 0ms2014-07-19 18:57:20 =ERROR REPORT====
+GET /anagram/ [tips] 404 0ms2014-07-20 08:11:35 =ERROR REPORT====
+GET /anagram/ [tips] 404 0ms
