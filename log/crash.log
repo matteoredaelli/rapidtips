@@ -19,4 +19,174 @@ GET /anagram/anagram/word/1 [tips] 404 0ms2014-07-19 18:00:28 =SUPERVISOR REPORT
 GET /anagram/ [tips] 404 0ms2014-07-19 18:01:33 =ERROR REPORT====
 GET /anagram/ [tips] 404 0ms2014-07-19 18:57:20 =ERROR REPORT====
 GET /anagram/ [tips] 404 0ms2014-07-20 08:11:35 =ERROR REPORT====
-GET /anagram/ [tips] 404 0ms
+GET /anagram/ [tips] 404 0ms2014-07-20 14:32:11 =ERROR REPORT====
+** Generic server <0.262.0> terminating 
+** Last message in was {route,"/"}
+** When Server state == {state,tips,["tips_anagram_controller","tips_home_controller"],45086,49183,53280}
+** Reason for termination == 
+** {'module could not be loaded',[{tips_home_controller,module_info,[exports],[]},{boss_controller_lib,convert_params_to_tokens,3,[{file,"src/boss/boss_controller_lib.erl"},{line,5}]},{boss_router_controller,route,2,[{file,"src/boss/boss_router_controller.erl"},{line,173}]},{boss_router_controller,handle_call,3,[{file,"src/boss/boss_router_controller.erl"},{line,64}]},{gen_server,handle_msg,5,[{file,"gen_server.erl"},{line,580}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,239}]}]}
+2014-07-20 14:32:11 =CRASH REPORT====
+  crasher:
+    initial call: boss_router_controller:init/1
+    pid: <0.262.0>
+    registered_name: []
+    exception exit: {{undef,[{tips_home_controller,module_info,[exports],[]},{boss_controller_lib,convert_params_to_tokens,3,[{file,"src/boss/boss_controller_lib.erl"},{line,5}]},{boss_router_controller,route,2,[{file,"src/boss/boss_router_controller.erl"},{line,173}]},{boss_router_controller,handle_call,3,[{file,"src/boss/boss_router_controller.erl"},{line,64}]},{gen_server,handle_msg,5,[{file,"gen_server.erl"},{line,580}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,239}]}]},[{gen_server,terminate,6,[{file,"gen_server.erl"},{line,746}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,239}]}]}
+    ancestors: [<0.261.0>,boss_web,boss_sup,<0.93.0>]
+    messages: []
+    links: [<0.261.0>]
+    dictionary: [{boss_environment,development}]
+    trap_exit: false
+    status: running
+    heap_size: 1598
+    stack_size: 27
+    reductions: 2692
+  neighbours:
+2014-07-20 14:32:11 =SUPERVISOR REPORT====
+     Supervisor: {<0.261.0>,boss_router_sup}
+     Context:    child_terminated
+     Reason:     {undef,[{tips_home_controller,module_info,[exports],[]},{boss_controller_lib,convert_params_to_tokens,3,[{file,"src/boss/boss_controller_lib.erl"},{line,5}]},{boss_router_controller,route,2,[{file,"src/boss/boss_router_controller.erl"},{line,173}]},{boss_router_controller,handle_call,3,[{file,"src/boss/boss_router_controller.erl"},{line,64}]},{gen_server,handle_msg,5,[{file,"gen_server.erl"},{line,580}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,239}]}]}
+     Offender:   [{pid,<0.262.0>},{name,router_controller},{mfargs,{boss_router_controller,start_link,[[{application,tips},{controllers,["tips_anagram_controller","tips_home_controller"]}]]}},{restart_type,permanent},{shutdown,2000},{child_type,worker}]
+
+2014-07-20 14:32:43 =ERROR REPORT====
+** Generic server <0.277.0> terminating 
+** Last message in was {route,"/"}
+** When Server state == {state,tips,["tips_anagram_controller","tips_home_controller"],57376,61471,65566}
+** Reason for termination == 
+** {'module could not be loaded',[{tips_home_controller,module_info,[exports],[]},{boss_controller_lib,convert_params_to_tokens,3,[{file,"src/boss/boss_controller_lib.erl"},{line,5}]},{boss_router_controller,route,2,[{file,"src/boss/boss_router_controller.erl"},{line,173}]},{boss_router_controller,handle_call,3,[{file,"src/boss/boss_router_controller.erl"},{line,64}]},{gen_server,handle_msg,5,[{file,"gen_server.erl"},{line,580}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,239}]}]}
+2014-07-20 14:32:43 =CRASH REPORT====
+  crasher:
+    initial call: boss_router_controller:init/1
+    pid: <0.277.0>
+    registered_name: []
+    exception exit: {{undef,[{tips_home_controller,module_info,[exports],[]},{boss_controller_lib,convert_params_to_tokens,3,[{file,"src/boss/boss_controller_lib.erl"},{line,5}]},{boss_router_controller,route,2,[{file,"src/boss/boss_router_controller.erl"},{line,173}]},{boss_router_controller,handle_call,3,[{file,"src/boss/boss_router_controller.erl"},{line,64}]},{gen_server,handle_msg,5,[{file,"gen_server.erl"},{line,580}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,239}]}]},[{gen_server,terminate,6,[{file,"gen_server.erl"},{line,746}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,239}]}]}
+    ancestors: [<0.261.0>,boss_web,boss_sup,<0.93.0>]
+    messages: []
+    links: [<0.261.0>]
+    dictionary: [{boss_environment,development}]
+    trap_exit: false
+    status: running
+    heap_size: 2586
+    stack_size: 27
+    reductions: 2693
+  neighbours:
+2014-07-20 14:32:43 =SUPERVISOR REPORT====
+     Supervisor: {<0.261.0>,boss_router_sup}
+     Context:    child_terminated
+     Reason:     {undef,[{tips_home_controller,module_info,[exports],[]},{boss_controller_lib,convert_params_to_tokens,3,[{file,"src/boss/boss_controller_lib.erl"},{line,5}]},{boss_router_controller,route,2,[{file,"src/boss/boss_router_controller.erl"},{line,173}]},{boss_router_controller,handle_call,3,[{file,"src/boss/boss_router_controller.erl"},{line,64}]},{gen_server,handle_msg,5,[{file,"gen_server.erl"},{line,580}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,239}]}]}
+     Offender:   [{pid,<0.277.0>},{name,router_controller},{mfargs,{boss_router_controller,start_link,[[{application,tips},{controllers,["tips_anagram_controller","tips_home_controller"]}]]}},{restart_type,permanent},{shutdown,2000},{child_type,worker}]
+
+2014-07-20 14:33:24 =ERROR REPORT====
+** Generic server <0.282.0> terminating 
+** Last message in was {route,"/"}
+** When Server state == {state,tips,["tips_anagram_controller","tips_home_controller"],69662,73759,77856}
+** Reason for termination == 
+** {'module could not be loaded',[{tips_home_controller,module_info,[exports],[]},{boss_controller_lib,convert_params_to_tokens,3,[{file,"src/boss/boss_controller_lib.erl"},{line,5}]},{boss_router_controller,route,2,[{file,"src/boss/boss_router_controller.erl"},{line,173}]},{boss_router_controller,handle_call,3,[{file,"src/boss/boss_router_controller.erl"},{line,64}]},{gen_server,handle_msg,5,[{file,"gen_server.erl"},{line,580}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,239}]}]}
+2014-07-20 14:33:24 =CRASH REPORT====
+  crasher:
+    initial call: boss_router_controller:init/1
+    pid: <0.282.0>
+    registered_name: []
+    exception exit: {{undef,[{tips_home_controller,module_info,[exports],[]},{boss_controller_lib,convert_params_to_tokens,3,[{file,"src/boss/boss_controller_lib.erl"},{line,5}]},{boss_router_controller,route,2,[{file,"src/boss/boss_router_controller.erl"},{line,173}]},{boss_router_controller,handle_call,3,[{file,"src/boss/boss_router_controller.erl"},{line,64}]},{gen_server,handle_msg,5,[{file,"gen_server.erl"},{line,580}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,239}]}]},[{gen_server,terminate,6,[{file,"gen_server.erl"},{line,746}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,239}]}]}
+    ancestors: [<0.261.0>,boss_web,boss_sup,<0.93.0>]
+    messages: []
+    links: [<0.261.0>]
+    dictionary: [{boss_environment,development}]
+    trap_exit: false
+    status: running
+    heap_size: 2586
+    stack_size: 27
+    reductions: 2693
+  neighbours:
+2014-07-20 14:33:24 =SUPERVISOR REPORT====
+     Supervisor: {<0.261.0>,boss_router_sup}
+     Context:    child_terminated
+     Reason:     {undef,[{tips_home_controller,module_info,[exports],[]},{boss_controller_lib,convert_params_to_tokens,3,[{file,"src/boss/boss_controller_lib.erl"},{line,5}]},{boss_router_controller,route,2,[{file,"src/boss/boss_router_controller.erl"},{line,173}]},{boss_router_controller,handle_call,3,[{file,"src/boss/boss_router_controller.erl"},{line,64}]},{gen_server,handle_msg,5,[{file,"gen_server.erl"},{line,580}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,239}]}]}
+     Offender:   [{pid,<0.282.0>},{name,router_controller},{mfargs,{boss_router_controller,start_link,[[{application,tips},{controllers,["tips_anagram_controller","tips_home_controller"]}]]}},{restart_type,permanent},{shutdown,2000},{child_type,worker}]
+
+2014-07-20 14:33:27 =ERROR REPORT====
+** Generic server <0.286.0> terminating 
+** Last message in was {route,"/"}
+** When Server state == {state,tips,["tips_anagram_controller","tips_home_controller"],81952,86047,90142}
+** Reason for termination == 
+** {'module could not be loaded',[{tips_home_controller,module_info,[exports],[]},{boss_controller_lib,convert_params_to_tokens,3,[{file,"src/boss/boss_controller_lib.erl"},{line,5}]},{boss_router_controller,route,2,[{file,"src/boss/boss_router_controller.erl"},{line,173}]},{boss_router_controller,handle_call,3,[{file,"src/boss/boss_router_controller.erl"},{line,64}]},{gen_server,handle_msg,5,[{file,"gen_server.erl"},{line,580}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,239}]}]}
+2014-07-20 14:33:27 =CRASH REPORT====
+  crasher:
+    initial call: boss_router_controller:init/1
+    pid: <0.286.0>
+    registered_name: []
+    exception exit: {{undef,[{tips_home_controller,module_info,[exports],[]},{boss_controller_lib,convert_params_to_tokens,3,[{file,"src/boss/boss_controller_lib.erl"},{line,5}]},{boss_router_controller,route,2,[{file,"src/boss/boss_router_controller.erl"},{line,173}]},{boss_router_controller,handle_call,3,[{file,"src/boss/boss_router_controller.erl"},{line,64}]},{gen_server,handle_msg,5,[{file,"gen_server.erl"},{line,580}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,239}]}]},[{gen_server,terminate,6,[{file,"gen_server.erl"},{line,746}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,239}]}]}
+    ancestors: [<0.261.0>,boss_web,boss_sup,<0.93.0>]
+    messages: []
+    links: [<0.261.0>]
+    dictionary: [{boss_environment,development}]
+    trap_exit: false
+    status: running
+    heap_size: 2586
+    stack_size: 27
+    reductions: 2693
+  neighbours:
+2014-07-20 14:33:27 =SUPERVISOR REPORT====
+     Supervisor: {<0.261.0>,boss_router_sup}
+     Context:    child_terminated
+     Reason:     {undef,[{tips_home_controller,module_info,[exports],[]},{boss_controller_lib,convert_params_to_tokens,3,[{file,"src/boss/boss_controller_lib.erl"},{line,5}]},{boss_router_controller,route,2,[{file,"src/boss/boss_router_controller.erl"},{line,173}]},{boss_router_controller,handle_call,3,[{file,"src/boss/boss_router_controller.erl"},{line,64}]},{gen_server,handle_msg,5,[{file,"gen_server.erl"},{line,580}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,239}]}]}
+     Offender:   [{pid,<0.286.0>},{name,router_controller},{mfargs,{boss_router_controller,start_link,[[{application,tips},{controllers,["tips_anagram_controller","tips_home_controller"]}]]}},{restart_type,permanent},{shutdown,2000},{child_type,worker}]
+
+2014-07-20 14:33:27 =ERROR REPORT====
+** Generic server <0.290.0> terminating 
+** Last message in was {route,"/"}
+** When Server state == {state,tips,["tips_anagram_controller","tips_home_controller"],94238,98335,102432}
+** Reason for termination == 
+** {'module could not be loaded',[{tips_home_controller,module_info,[exports],[]},{boss_controller_lib,convert_params_to_tokens,3,[{file,"src/boss/boss_controller_lib.erl"},{line,5}]},{boss_router_controller,route,2,[{file,"src/boss/boss_router_controller.erl"},{line,173}]},{boss_router_controller,handle_call,3,[{file,"src/boss/boss_router_controller.erl"},{line,64}]},{gen_server,handle_msg,5,[{file,"gen_server.erl"},{line,580}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,239}]}]}
+2014-07-20 14:33:27 =CRASH REPORT====
+  crasher:
+    initial call: boss_router_controller:init/1
+    pid: <0.290.0>
+    registered_name: []
+    exception exit: {{undef,[{tips_home_controller,module_info,[exports],[]},{boss_controller_lib,convert_params_to_tokens,3,[{file,"src/boss/boss_controller_lib.erl"},{line,5}]},{boss_router_controller,route,2,[{file,"src/boss/boss_router_controller.erl"},{line,173}]},{boss_router_controller,handle_call,3,[{file,"src/boss/boss_router_controller.erl"},{line,64}]},{gen_server,handle_msg,5,[{file,"gen_server.erl"},{line,580}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,239}]}]},[{gen_server,terminate,6,[{file,"gen_server.erl"},{line,746}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,239}]}]}
+    ancestors: [<0.261.0>,boss_web,boss_sup,<0.93.0>]
+    messages: []
+    links: [<0.261.0>]
+    dictionary: [{boss_environment,development}]
+    trap_exit: false
+    status: running
+    heap_size: 2586
+    stack_size: 27
+    reductions: 2693
+  neighbours:
+2014-07-20 14:33:27 =SUPERVISOR REPORT====
+     Supervisor: {<0.261.0>,boss_router_sup}
+     Context:    child_terminated
+     Reason:     {undef,[{tips_home_controller,module_info,[exports],[]},{boss_controller_lib,convert_params_to_tokens,3,[{file,"src/boss/boss_controller_lib.erl"},{line,5}]},{boss_router_controller,route,2,[{file,"src/boss/boss_router_controller.erl"},{line,173}]},{boss_router_controller,handle_call,3,[{file,"src/boss/boss_router_controller.erl"},{line,64}]},{gen_server,handle_msg,5,[{file,"gen_server.erl"},{line,580}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,239}]}]}
+     Offender:   [{pid,<0.290.0>},{name,router_controller},{mfargs,{boss_router_controller,start_link,[[{application,tips},{controllers,["tips_anagram_controller","tips_home_controller"]}]]}},{restart_type,permanent},{shutdown,2000},{child_type,worker}]
+
+2014-07-20 14:33:33 =ERROR REPORT====
+** Generic server <0.294.0> terminating 
+** Last message in was {route,"/home"}
+** When Server state == {state,tips,["tips_anagram_controller","tips_home_controller"],106528,110623,114718}
+** Reason for termination == 
+** {'module could not be loaded',[{tips_home_controller,module_info,[attributes],[]},{boss_router_controller,default_action,2,[{file,"src/boss/boss_router_controller.erl"},{line,202}]},{boss_router_controller,route,2,[{file,"src/boss/boss_router_controller.erl"},{line,157}]},{boss_router_controller,handle_call,3,[{file,"src/boss/boss_router_controller.erl"},{line,64}]},{gen_server,handle_msg,5,[{file,"gen_server.erl"},{line,580}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,239}]}]}
+2014-07-20 14:33:33 =CRASH REPORT====
+  crasher:
+    initial call: boss_router_controller:init/1
+    pid: <0.294.0>
+    registered_name: []
+    exception exit: {{undef,[{tips_home_controller,module_info,[attributes],[]},{boss_router_controller,default_action,2,[{file,"src/boss/boss_router_controller.erl"},{line,202}]},{boss_router_controller,route,2,[{file,"src/boss/boss_router_controller.erl"},{line,157}]},{boss_router_controller,handle_call,3,[{file,"src/boss/boss_router_controller.erl"},{line,64}]},{gen_server,handle_msg,5,[{file,"gen_server.erl"},{line,580}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,239}]}]},[{gen_server,terminate,6,[{file,"gen_server.erl"},{line,746}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,239}]}]}
+    ancestors: [<0.261.0>,boss_web,boss_sup,<0.93.0>]
+    messages: []
+    links: [<0.261.0>]
+    dictionary: [{boss_environment,development}]
+    trap_exit: false
+    status: running
+    heap_size: 1598
+    stack_size: 27
+    reductions: 2414
+  neighbours:
+2014-07-20 14:33:33 =SUPERVISOR REPORT====
+     Supervisor: {<0.261.0>,boss_router_sup}
+     Context:    child_terminated
+     Reason:     {undef,[{tips_home_controller,module_info,[attributes],[]},{boss_router_controller,default_action,2,[{file,"src/boss/boss_router_controller.erl"},{line,202}]},{boss_router_controller,route,2,[{file,"src/boss/boss_router_controller.erl"},{line,157}]},{boss_router_controller,handle_call,3,[{file,"src/boss/boss_router_controller.erl"},{line,64}]},{gen_server,handle_msg,5,[{file,"gen_server.erl"},{line,580}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,239}]}]}
+     Offender:   [{pid,<0.294.0>},{name,router_controller},{mfargs,{boss_router_controller,start_link,[[{application,tips},{controllers,["tips_anagram_controller","tips_home_controller"]}]]}},{restart_type,permanent},{shutdown,2000},{child_type,worker}]
+
+2014-07-20 14:34:57 =ERROR REPORT====
+GET /home/anagram/ [tips] 404 0ms2014-07-20 14:35:06 =ERROR REPORT====
+GET /home/anagram/index [tips] 404 0ms
