@@ -13,6 +13,7 @@ index('GET', []) ->
 index('POST', []) ->
     %%Word = Req:param("word"),
     Word = Req:post_param("word"),
+    ShortWord = lists:sublist(Word, 10),
     {ok, [{title, "Anagram"}, 
 	  {description, "Anagram"}, 
-	  {keywords, "anagram,permutation"}, {words, perms(Word)}]}.
+	  {keywords, "anagram,permutation"}, {words, perms(ShortWord)}]}.
