@@ -2,7 +2,7 @@
 -compile(export_all).
 
 perms([]) -> [[]];
-perms(L) -> [[H|T] || H <- L, T <- perms(L--[H])].
+perms(L) -> [list_to_binary([H|T]) || H <- L, T <- perms(L--[H])].
 
 anagram('GET', []) ->
     %%{ok, []}.
