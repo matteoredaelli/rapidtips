@@ -95,3 +95,138 @@
 2014-07-20 14:33:52.701 [error] <0.300.0>@boss_load:compile_and_accumulate_errors:258 Compile Error, "src/controller/tips_anagram_controller.erl" -> [{"/home/matteo/src/rapidtips/src/controller/tips_anagram_controller.erl",[{9,erl_parse,["syntax error before: ","'}'"]}]}]
 2014-07-20 14:34:57.366 [error] <0.307.0> GET /home/anagram/ [tips] 404 0ms
 2014-07-20 14:35:06.042 [error] <0.309.0> GET /home/anagram/index [tips] 404 0ms
+2014-07-21 08:40:37.438 [error] <0.261.0> GET /tools/anagram [tips] 404 0ms
+2014-07-21 08:40:57.161 [error] <0.256.0> gen_server <0.256.0> terminated with reason: bad argument in call to erlang:list_to_atom(undefined) in boss_router_controller:route/2 line 172
+2014-07-21 08:40:57.162 [error] <0.256.0> CRASH REPORT Process <0.256.0> with 0 neighbours exited with reason: bad argument in call to erlang:list_to_atom(undefined) in boss_router_controller:route/2 line 172 in gen_server:terminate/6 line 746
+2014-07-21 08:40:57.162 [error] <0.262.0>@boss_web_controller_handle_request:handle_request:30 Unhandled Error: exit:{{badarg,[{erlang,list_to_atom,[undefined],[]},{boss_router_controller,route,2,[{file,"src/boss/boss_router_controller.erl"},{line,172}]},{boss_router_controller,handle_call,3,[{file,"src/boss/boss_router_controller.erl"},{line,64}]},{gen_server,handle_msg,5,[{file,"gen_server.erl"},{line,580}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,239}]}]},{gen_server,call,[<0.256.0>,{route,"/"}]}}. Stacktrace: [{gen_server,call,2,[{file,"gen_server.erl"},{line,182}]},{boss_web_controller_handle_request,process_dynamic_request,4,[{file,"src/boss/boss_web_controller_handle_request.erl"},{line,237}]},{boss_web_controller_handle_request,process_request,4,[{file,"src/boss/boss_web_controller_handle_request.erl"},{line,232}]},{boss_web_controller_handle_request,set_timer,7,[{file,"src/boss/boss_web_controller_handle_request.erl"},{line,148}]},{boss_web_controller_handle_request,build_dynamic_response,4,[{file,"src/boss/boss_web_controller_handle_request.erl"},{line,122}]},{boss_web_controller_handle_request,handle_request,3,[{file,"src/boss/boss_web_controller_handle_request.erl"},{line,26}]},{mochicow_upgrade,upgrade,4,[{file,"src/mochicow_upgrade.erl"},{line,72}]},{cowboy_protocol,execute,4,[{file,"src/cowboy_protocol.erl"},{line,529}]}]
+2014-07-21 08:40:57.162 [error] <0.255.0> Supervisor {<0.255.0>,boss_router_sup} had child router_controller started with boss_router_controller:start_link([{application,tips},{controllers,[]}]) at <0.256.0> exit with reason bad argument in call to erlang:list_to_atom(undefined) in boss_router_controller:route/2 line 172 in context child_terminated
+2014-07-21 08:41:01.383 [error] <0.265.0> GET /anagram/ [tips] 404 0ms
+2014-07-21 08:41:07.810 [error] <0.266.0> GET /tools/ [tips] 404 0ms
+2014-07-21 08:42:23.033 [error] <0.267.0> GET /tools/ [tips] 404 0ms
+2014-07-21 08:42:24.682 [error] <0.268.0> GET /tools/ [tips] 404 0ms
+2014-07-21 08:42:25.181 [error] <0.269.0> GET /tools/ [tips] 404 0ms
+2014-07-21 08:42:25.245 [error] <0.270.0> GET /tools/ [tips] 404 0ms
+2014-07-21 08:42:25.303 [error] <0.271.0> GET /tools/ [tips] 404 0ms
+2014-07-21 08:42:25.352 [error] <0.272.0> GET /tools/ [tips] 404 0ms
+2014-07-21 08:42:25.404 [error] <0.273.0> GET /tools/ [tips] 404 0ms
+2014-07-21 08:42:25.453 [error] <0.274.0> GET /tools/ [tips] 404 0ms
+2014-07-21 08:42:25.511 [error] <0.275.0> GET /tools/ [tips] 404 0ms
+2014-07-21 08:42:25.551 [error] <0.276.0> GET /tools/ [tips] 404 0ms
+2014-07-21 08:42:25.601 [error] <0.277.0> GET /tools/ [tips] 404 0ms
+2014-07-21 08:42:25.664 [error] <0.278.0> GET /tools/ [tips] 404 0ms
+2014-07-21 08:42:25.723 [error] <0.279.0> GET /tools/ [tips] 404 0ms
+2014-07-21 08:42:25.746 [error] <0.280.0> GET /tools/ [tips] 404 0ms
+2014-07-21 08:42:25.789 [error] <0.281.0> GET /tools/ [tips] 404 0ms
+2014-07-21 08:42:25.858 [error] <0.282.0> GET /tools/ [tips] 404 0ms
+2014-07-21 08:42:25.909 [error] <0.283.0> GET /tools/ [tips] 404 0ms
+2014-07-21 08:42:25.964 [error] <0.284.0> GET /tools/ [tips] 404 0ms
+2014-07-21 09:08:31.409 [error] <0.256.0> gen_server <0.256.0> terminated with reason: bad argument in call to erlang:list_to_atom(undefined) in boss_router_controller:route/2 line 172
+2014-07-21 09:08:31.409 [error] <0.256.0> CRASH REPORT Process <0.256.0> with 0 neighbours exited with reason: bad argument in call to erlang:list_to_atom(undefined) in boss_router_controller:route/2 line 172 in gen_server:terminate/6 line 746
+2014-07-21 09:08:31.409 [error] <0.261.0>@boss_web_controller_handle_request:handle_request:30 Unhandled Error: exit:{{badarg,[{erlang,list_to_atom,[undefined],[]},{boss_router_controller,route,2,[{file,"src/boss/boss_router_controller.erl"},{line,172}]},{boss_router_controller,handle_call,3,[{file,"src/boss/boss_router_controller.erl"},{line,64}]},{gen_server,handle_msg,5,[{file,"gen_server.erl"},{line,580}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,239}]}]},{gen_server,call,[<0.256.0>,{route,"/"}]}}. Stacktrace: [{gen_server,call,2,[{file,"gen_server.erl"},{line,182}]},{boss_web_controller_handle_request,process_dynamic_request,4,[{file,"src/boss/boss_web_controller_handle_request.erl"},{line,237}]},{boss_web_controller_handle_request,process_request,4,[{file,"src/boss/boss_web_controller_handle_request.erl"},{line,232}]},{boss_web_controller_handle_request,set_timer,7,[{file,"src/boss/boss_web_controller_handle_request.erl"},{line,148}]},{boss_web_controller_handle_request,build_dynamic_response,4,[{file,"src/boss/boss_web_controller_handle_request.erl"},{line,122}]},{boss_web_controller_handle_request,handle_request,3,[{file,"src/boss/boss_web_controller_handle_request.erl"},{line,26}]},{mochicow_upgrade,upgrade,4,[{file,"src/mochicow_upgrade.erl"},{line,72}]},{cowboy_protocol,execute,4,[{file,"src/cowboy_protocol.erl"},{line,529}]}]
+2014-07-21 09:08:31.410 [error] <0.255.0> Supervisor {<0.255.0>,boss_router_sup} had child router_controller started with boss_router_controller:start_link([{application,tips},{controllers,[]}]) at <0.256.0> exit with reason bad argument in call to erlang:list_to_atom(undefined) in boss_router_controller:route/2 line 172 in context child_terminated
+2014-07-21 09:08:40.277 [error] <0.264.0> GET /tools/ [tips] 404 0ms
+2014-07-21 09:09:50.278 [error] <0.265.0> GET /tools/ [tips] 404 0ms
+2014-07-21 09:12:27.124 [error] <0.273.0> GET /tools/ [tips] 404 0ms
+2014-07-21 09:12:29.238 [error] <0.274.0> GET /tools/ [tips] 404 0ms
+2014-07-21 09:14:36.972 [error] <0.275.0> GET /tools/ [tips] 404 0ms
+2014-07-21 09:15:04.597 [error] emulator Error in process <0.273.0> on node 'tips@debian' with exit value: {{badmatch,false},[{cowboy_router,execute,2,[{file,"src/cowboy_router.erl"},{line,170}]},{cowboy_protocol,execute,4,[{file,"src/cowboy_protocol.erl"},{line,529}]}]}
+
+
+2014-07-21 09:15:04.598 [error] <0.158.0> Ranch listener boss_http_listener had connection process started with cowboy_protocol:start_link/4 at <0.273.0> exit with reason: {{badmatch,false},[{cowboy_router,execute,2,[{file,"src/cowboy_router.erl"},{line,170}]},{cowboy_protocol,execute,4,[{file,"src/cowboy_protocol.erl"},{line,529}]}]}
+
+2014-07-21 09:19:42.979 [error] <0.261.0> GET /tools/index [tips] 404 0ms
+2014-07-21 09:21:16.124 [error] <0.262.0> GET /tools/index [tips] 404 0ms
+2014-07-21 09:21:20.411 [error] <0.263.0> GET /tools/index [tips] 404 0ms
+2014-07-21 09:21:20.600 [error] <0.264.0> GET /tools/index [tips] 404 0ms
+2014-07-21 09:21:33.517 [error] <0.265.0> GET /tools/index [tips] 404 0ms
+2014-07-21 09:21:36.803 [error] <0.273.0> GET /tools/index [tips] 404 0ms
+2014-07-21 09:21:36.969 [error] <0.274.0> GET /tools/index [tips] 404 0ms
+2014-07-21 09:21:37.468 [error] <0.275.0> GET /tools/index [tips] 404 0ms
+2014-07-21 09:21:37.548 [error] <0.276.0> GET /tools/index [tips] 404 0ms
+2014-07-21 09:21:37.607 [error] <0.277.0> GET /tools/index [tips] 404 0ms
+2014-07-21 09:21:37.676 [error] <0.278.0> GET /tools/index [tips] 404 0ms
+2014-07-21 09:21:37.676 [error] <0.278.0>@boss_web_controller_handle_request:handle_request:30 Unhandled Error: exit:normal. Stacktrace: [{mochicow_request,send,2,[{file,"src/mochicow_request.erl"},{line,156}]},{mochicow_request,respond,2,[{file,"src/mochicow_request.erl"},{line,406}]},{boss_web_controller_handle_request,handle_request,3,[{file,"src/boss/boss_web_controller_handle_request.erl"},{line,26}]},{mochicow_upgrade,upgrade,4,[{file,"src/mochicow_upgrade.erl"},{line,72}]},{cowboy_protocol,execute,4,[{file,"src/cowboy_protocol.erl"},{line,529}]}]
+2014-07-21 09:21:37.687 [error] <0.279.0> GET /tools/index [tips] 404 0ms
+2014-07-21 09:21:37.745 [error] <0.280.0> GET /tools/index [tips] 404 0ms
+2014-07-21 09:21:37.806 [error] <0.281.0> GET /tools/index [tips] 404 0ms
+2014-07-21 09:21:37.859 [error] <0.282.0> GET /tools/index [tips] 404 0ms
+2014-07-21 09:21:37.920 [error] <0.283.0> GET /tools/index [tips] 404 0ms
+2014-07-21 09:21:37.938 [error] <0.284.0> GET /tools/index [tips] 404 0ms
+2014-07-21 09:21:38.006 [error] <0.285.0> GET /tools/index [tips] 404 0ms
+2014-07-21 09:21:38.057 [error] <0.286.0> GET /tools/index [tips] 404 0ms
+2014-07-21 09:21:38.106 [error] <0.287.0> GET /tools/index [tips] 404 0ms
+2014-07-21 09:21:38.163 [error] <0.288.0> GET /tools/index [tips] 404 0ms
+2014-07-21 09:21:38.223 [error] <0.289.0> GET /tools/index [tips] 404 0ms
+2014-07-21 09:21:38.237 [error] <0.290.0> GET /tools/index [tips] 404 0ms
+2014-07-21 09:21:38.302 [error] <0.291.0> GET /tools/index [tips] 404 0ms
+2014-07-21 09:21:38.366 [error] <0.292.0> GET /tools/index [tips] 404 0ms
+2014-07-21 09:21:38.417 [error] <0.293.0> GET /tools/index [tips] 404 0ms
+2014-07-21 09:21:38.463 [error] <0.294.0> GET /tools/index [tips] 404 0ms
+2014-07-21 09:21:38.526 [error] <0.295.0> GET /tools/index [tips] 404 0ms
+2014-07-21 09:21:38.533 [error] <0.296.0> GET /tools/index [tips] 404 0ms
+2014-07-21 09:21:38.596 [error] <0.297.0> GET /tools/index [tips] 404 0ms
+2014-07-21 09:21:38.660 [error] <0.298.0> GET /tools/index [tips] 404 0ms
+2014-07-21 09:21:38.728 [error] <0.299.0> GET /tools/index [tips] 404 0ms
+2014-07-21 09:21:38.746 [error] <0.300.0> GET /tools/index [tips] 404 0ms
+2014-07-21 09:21:38.808 [error] <0.301.0> GET /tools/index [tips] 404 0ms
+2014-07-21 09:27:10.070 [error] <0.302.0> GET /tools/index [tips] 404 0ms
+2014-07-21 09:30:30.501 [error] <0.153.0> Supervisor {<0.153.0>,ranch_acceptors_sup} had child {acceptor,<0.153.0>,1} started with ranch_acceptor:start_link(#Port<0.19567>, ranch_tcp, <0.152.0>) at <0.154.0> exit with reason killed in context child_terminated
+2014-07-21 09:30:30.502 [error] <0.153.0> Supervisor {<0.153.0>,ranch_acceptors_sup} had child {acceptor,<0.153.0>,2} started with ranch_acceptor:start_link(#Port<0.19567>, ranch_tcp, <0.152.0>) at <0.155.0> exit with reason killed in context child_terminated
+2014-07-21 09:30:30.502 [error] <0.153.0> Supervisor {<0.153.0>,ranch_acceptors_sup} had child {acceptor,<0.153.0>,3} started with ranch_acceptor:start_link(#Port<0.19567>, ranch_tcp, <0.152.0>) at <0.156.0> exit with reason killed in context child_terminated
+2014-07-21 09:30:30.503 [error] <0.153.0> Supervisor {<0.153.0>,ranch_acceptors_sup} had child {acceptor,<0.153.0>,4} started with ranch_acceptor:start_link(#Port<0.19567>, ranch_tcp, <0.152.0>) at <0.157.0> exit with reason killed in context child_terminated
+2014-07-21 09:30:30.503 [error] <0.153.0> Supervisor {<0.153.0>,ranch_acceptors_sup} had child {acceptor,<0.153.0>,5} started with ranch_acceptor:start_link(#Port<0.19567>, ranch_tcp, <0.152.0>) at <0.158.0> exit with reason killed in context child_terminated
+2014-07-21 09:30:30.504 [error] <0.153.0> Supervisor {<0.153.0>,ranch_acceptors_sup} had child {acceptor,<0.153.0>,36} started with ranch_acceptor:start_link(#Port<0.19567>, ranch_tcp, <0.152.0>) at <0.189.0> exit with reason killed in context child_terminated
+2014-07-21 09:30:30.507 [error] <0.153.0> Supervisor {<0.153.0>,ranch_acceptors_sup} had child {acceptor,<0.153.0>,38} started with ranch_acceptor:start_link(#Port<0.19567>, ranch_tcp, <0.152.0>) at <0.191.0> exit with reason killed in context child_terminated
+2014-07-21 09:30:30.507 [error] <0.153.0> Supervisor {<0.153.0>,ranch_acceptors_sup} had child {acceptor,<0.153.0>,39} started with ranch_acceptor:start_link(#Port<0.19567>, ranch_tcp, <0.152.0>) at <0.192.0> exit with reason killed in context child_terminated
+2014-07-21 09:30:30.508 [error] <0.153.0> Supervisor {<0.153.0>,ranch_acceptors_sup} had child {acceptor,<0.153.0>,40} started with ranch_acceptor:start_link(#Port<0.19567>, ranch_tcp, <0.152.0>) at <0.193.0> exit with reason killed in context child_terminated
+2014-07-21 09:30:30.508 [error] <0.153.0> Supervisor {<0.153.0>,ranch_acceptors_sup} had child {acceptor,<0.153.0>,43} started with ranch_acceptor:start_link(#Port<0.19567>, ranch_tcp, <0.152.0>) at <0.196.0> exit with reason killed in context child_terminated
+2014-07-21 09:30:30.509 [error] <0.153.0> Supervisor {<0.153.0>,ranch_acceptors_sup} had child {acceptor,<0.153.0>,100} started with ranch_acceptor:start_link(#Port<0.19567>, ranch_tcp, <0.152.0>) at <0.253.0> exit with reason killed in context child_terminated
+2014-07-21 09:30:30.509 [error] <0.153.0> Supervisor {<0.153.0>,ranch_acceptors_sup} had child {acceptor,<0.153.0>,100} started with ranch_acceptor:start_link(#Port<0.19567>, ranch_tcp, <0.152.0>) at <0.253.0> exit with reason reached_max_restart_intensity in context shutdown
+2014-07-21 09:30:30.509 [error] <0.153.0> Supervisor {<0.153.0>,ranch_acceptors_sup} had child {acceptor,<0.153.0>,98} started with ranch_acceptor:start_link(#Port<0.19567>, ranch_tcp, <0.152.0>) at <0.251.0> exit with reason killed in context shutdown_error
+2014-07-21 09:30:30.510 [error] <0.153.0> Supervisor {<0.153.0>,ranch_acceptors_sup} had child {acceptor,<0.153.0>,97} started with ranch_acceptor:start_link(#Port<0.19567>, ranch_tcp, <0.152.0>) at <0.250.0> exit with reason killed in context shutdown_error
+2014-07-21 09:30:30.510 [error] <0.153.0> Supervisor {<0.153.0>,ranch_acceptors_sup} had child {acceptor,<0.153.0>,96} started with ranch_acceptor:start_link(#Port<0.19567>, ranch_tcp, <0.152.0>) at <0.249.0> exit with reason killed in context shutdown_error
+2014-07-21 09:30:30.510 [error] <0.153.0> Supervisor {<0.153.0>,ranch_acceptors_sup} had child {acceptor,<0.153.0>,95} started with ranch_acceptor:start_link(#Port<0.19567>, ranch_tcp, <0.152.0>) at <0.248.0> exit with reason killed in context shutdown_error
+2014-07-21 09:30:30.511 [error] <0.153.0> Supervisor {<0.153.0>,ranch_acceptors_sup} had child {acceptor,<0.153.0>,94} started with ranch_acceptor:start_link(#Port<0.19567>, ranch_tcp, <0.152.0>) at <0.247.0> exit with reason killed in context shutdown_error
+2014-07-21 09:30:30.511 [error] <0.153.0> Supervisor {<0.153.0>,ranch_acceptors_sup} had child {acceptor,<0.153.0>,93} started with ranch_acceptor:start_link(#Port<0.19567>, ranch_tcp, <0.152.0>) at <0.246.0> exit with reason killed in context shutdown_error
+2014-07-21 09:30:30.511 [error] <0.153.0> Supervisor {<0.153.0>,ranch_acceptors_sup} had child {acceptor,<0.153.0>,87} started with ranch_acceptor:start_link(#Port<0.19567>, ranch_tcp, <0.152.0>) at <0.240.0> exit with reason killed in context shutdown_error
+2014-07-21 09:30:30.511 [error] <0.153.0> Supervisor {<0.153.0>,ranch_acceptors_sup} had child {acceptor,<0.153.0>,86} started with ranch_acceptor:start_link(#Port<0.19567>, ranch_tcp, <0.152.0>) at <0.239.0> exit with reason killed in context shutdown_error
+2014-07-21 09:30:30.512 [error] <0.153.0> Supervisor {<0.153.0>,ranch_acceptors_sup} had child {acceptor,<0.153.0>,85} started with ranch_acceptor:start_link(#Port<0.19567>, ranch_tcp, <0.152.0>) at <0.238.0> exit with reason killed in context shutdown_error
+2014-07-21 09:30:30.515 [error] <0.153.0> Supervisor {<0.153.0>,ranch_acceptors_sup} had child {acceptor,<0.153.0>,83} started with ranch_acceptor:start_link(#Port<0.19567>, ranch_tcp, <0.152.0>) at <0.236.0> exit with reason killed in context shutdown_error
+2014-07-21 09:30:30.515 [error] <0.153.0> Supervisor {<0.153.0>,ranch_acceptors_sup} had child {acceptor,<0.153.0>,82} started with ranch_acceptor:start_link(#Port<0.19567>, ranch_tcp, <0.152.0>) at <0.235.0> exit with reason killed in context shutdown_error
+2014-07-21 09:30:30.515 [error] <0.153.0> Supervisor {<0.153.0>,ranch_acceptors_sup} had child {acceptor,<0.153.0>,81} started with ranch_acceptor:start_link(#Port<0.19567>, ranch_tcp, <0.152.0>) at <0.234.0> exit with reason killed in context shutdown_error
+2014-07-21 09:30:30.516 [error] <0.153.0> Supervisor {<0.153.0>,ranch_acceptors_sup} had child {acceptor,<0.153.0>,80} started with ranch_acceptor:start_link(#Port<0.19567>, ranch_tcp, <0.152.0>) at <0.233.0> exit with reason killed in context shutdown_error
+2014-07-21 09:30:30.516 [error] <0.153.0> Supervisor {<0.153.0>,ranch_acceptors_sup} had child {acceptor,<0.153.0>,78} started with ranch_acceptor:start_link(#Port<0.19567>, ranch_tcp, <0.152.0>) at <0.231.0> exit with reason killed in context shutdown_error
+2014-07-21 09:30:30.516 [error] <0.153.0> Supervisor {<0.153.0>,ranch_acceptors_sup} had child {acceptor,<0.153.0>,77} started with ranch_acceptor:start_link(#Port<0.19567>, ranch_tcp, <0.152.0>) at <0.230.0> exit with reason killed in context shutdown_error
+2014-07-21 09:30:30.517 [error] <0.153.0> Supervisor {<0.153.0>,ranch_acceptors_sup} had child {acceptor,<0.153.0>,76} started with ranch_acceptor:start_link(#Port<0.19567>, ranch_tcp, <0.152.0>) at <0.229.0> exit with reason killed in context shutdown_error
+2014-07-21 09:30:30.517 [error] <0.153.0> Supervisor {<0.153.0>,ranch_acceptors_sup} had child {acceptor,<0.153.0>,75} started with ranch_acceptor:start_link(#Port<0.19567>, ranch_tcp, <0.152.0>) at <0.228.0> exit with reason killed in context shutdown_error
+2014-07-21 09:30:30.517 [error] <0.153.0> Supervisor {<0.153.0>,ranch_acceptors_sup} had child {acceptor,<0.153.0>,74} started with ranch_acceptor:start_link(#Port<0.19567>, ranch_tcp, <0.152.0>) at <0.227.0> exit with reason killed in context shutdown_error
+2014-07-21 09:30:30.518 [error] <0.153.0> Supervisor {<0.153.0>,ranch_acceptors_sup} had child {acceptor,<0.153.0>,73} started with ranch_acceptor:start_link(#Port<0.19567>, ranch_tcp, <0.152.0>) at <0.226.0> exit with reason killed in context shutdown_error
+2014-07-21 09:30:30.518 [error] <0.153.0> Supervisor {<0.153.0>,ranch_acceptors_sup} had child {acceptor,<0.153.0>,71} started with ranch_acceptor:start_link(#Port<0.19567>, ranch_tcp, <0.152.0>) at <0.224.0> exit with reason killed in context shutdown_error
+2014-07-21 09:30:30.519 [error] <0.153.0> Supervisor {<0.153.0>,ranch_acceptors_sup} had child {acceptor,<0.153.0>,70} started with ranch_acceptor:start_link(#Port<0.19567>, ranch_tcp, <0.152.0>) at <0.223.0> exit with reason killed in context shutdown_error
+2014-07-21 09:30:30.519 [error] <0.153.0> Supervisor {<0.153.0>,ranch_acceptors_sup} had child {acceptor,<0.153.0>,69} started with ranch_acceptor:start_link(#Port<0.19567>, ranch_tcp, <0.152.0>) at <0.222.0> exit with reason killed in context shutdown_error
+2014-07-21 09:30:30.519 [error] <0.153.0> Supervisor {<0.153.0>,ranch_acceptors_sup} had child {acceptor,<0.153.0>,68} started with ranch_acceptor:start_link(#Port<0.19567>, ranch_tcp, <0.152.0>) at <0.221.0> exit with reason killed in context shutdown_error
+2014-07-21 09:30:30.520 [error] <0.153.0> Supervisor {<0.153.0>,ranch_acceptors_sup} had child {acceptor,<0.153.0>,66} started with ranch_acceptor:start_link(#Port<0.19567>, ranch_tcp, <0.152.0>) at <0.219.0> exit with reason killed in context shutdown_error
+2014-07-21 09:30:30.523 [error] <0.153.0> Supervisor {<0.153.0>,ranch_acceptors_sup} had child {acceptor,<0.153.0>,65} started with ranch_acceptor:start_link(#Port<0.19567>, ranch_tcp, <0.152.0>) at <0.218.0> exit with reason killed in context shutdown_error
+2014-07-21 09:30:30.523 [error] <0.153.0> Supervisor {<0.153.0>,ranch_acceptors_sup} had child {acceptor,<0.153.0>,64} started with ranch_acceptor:start_link(#Port<0.19567>, ranch_tcp, <0.152.0>) at <0.217.0> exit with reason killed in context shutdown_error
+2014-07-21 09:30:30.523 [error] <0.153.0> Supervisor {<0.153.0>,ranch_acceptors_sup} had child {acceptor,<0.153.0>,63} started with ranch_acceptor:start_link(#Port<0.19567>, ranch_tcp, <0.152.0>) at <0.216.0> exit with reason killed in context shutdown_error
+2014-07-21 09:30:30.524 [error] <0.153.0> Supervisor {<0.153.0>,ranch_acceptors_sup} had child {acceptor,<0.153.0>,62} started with ranch_acceptor:start_link(#Port<0.19567>, ranch_tcp, <0.152.0>) at <0.215.0> exit with reason killed in context shutdown_error
+2014-07-21 09:30:30.524 [error] <0.153.0> Supervisor {<0.153.0>,ranch_acceptors_sup} had child {acceptor,<0.153.0>,61} started with ranch_acceptor:start_link(#Port<0.19567>, ranch_tcp, <0.152.0>) at <0.214.0> exit with reason killed in context shutdown_error
+2014-07-21 09:30:30.524 [error] <0.153.0> Supervisor {<0.153.0>,ranch_acceptors_sup} had child {acceptor,<0.153.0>,60} started with ranch_acceptor:start_link(#Port<0.19567>, ranch_tcp, <0.152.0>) at <0.213.0> exit with reason killed in context shutdown_error
+2014-07-21 09:30:30.525 [error] <0.153.0> Supervisor {<0.153.0>,ranch_acceptors_sup} had child {acceptor,<0.153.0>,59} started with ranch_acceptor:start_link(#Port<0.19567>, ranch_tcp, <0.152.0>) at <0.212.0> exit with reason killed in context shutdown_error
+2014-07-21 09:30:30.525 [error] <0.153.0> Supervisor {<0.153.0>,ranch_acceptors_sup} had child {acceptor,<0.153.0>,57} started with ranch_acceptor:start_link(#Port<0.19567>, ranch_tcp, <0.152.0>) at <0.210.0> exit with reason killed in context shutdown_error
+2014-07-21 09:30:30.525 [error] <0.153.0> Supervisor {<0.153.0>,ranch_acceptors_sup} had child {acceptor,<0.153.0>,56} started with ranch_acceptor:start_link(#Port<0.19567>, ranch_tcp, <0.152.0>) at <0.209.0> exit with reason killed in context shutdown_error
+2014-07-21 09:30:30.526 [error] <0.153.0> Supervisor {<0.153.0>,ranch_acceptors_sup} had child {acceptor,<0.153.0>,51} started with ranch_acceptor:start_link(#Port<0.19567>, ranch_tcp, <0.152.0>) at <0.204.0> exit with reason killed in context shutdown_error
+2014-07-21 09:30:30.526 [error] <0.153.0> Supervisor {<0.153.0>,ranch_acceptors_sup} had child {acceptor,<0.153.0>,49} started with ranch_acceptor:start_link(#Port<0.19567>, ranch_tcp, <0.152.0>) at <0.202.0> exit with reason killed in context shutdown_error
+2014-07-21 09:30:30.526 [error] <0.153.0> Supervisor {<0.153.0>,ranch_acceptors_sup} had child {acceptor,<0.153.0>,46} started with ranch_acceptor:start_link(#Port<0.19567>, ranch_tcp, <0.152.0>) at <0.199.0> exit with reason killed in context shutdown_error
+2014-07-21 09:30:30.527 [error] <0.153.0> Supervisor {<0.153.0>,ranch_acceptors_sup} had child {acceptor,<0.153.0>,42} started with ranch_acceptor:start_link(#Port<0.19567>, ranch_tcp, <0.152.0>) at <0.195.0> exit with reason killed in context shutdown_error
+2014-07-21 09:30:30.527 [error] <0.153.0> Supervisor {<0.153.0>,ranch_acceptors_sup} had child {acceptor,<0.153.0>,41} started with ranch_acceptor:start_link(#Port<0.19567>, ranch_tcp, <0.152.0>) at <0.194.0> exit with reason killed in context shutdown_error
+2014-07-21 09:30:30.528 [error] <0.153.0> Supervisor {<0.153.0>,ranch_acceptors_sup} had child {acceptor,<0.153.0>,37} started with ranch_acceptor:start_link(#Port<0.19567>, ranch_tcp, <0.152.0>) at <0.190.0> exit with reason killed in context shutdown_error
+2014-07-21 09:30:30.531 [error] <0.151.0> Supervisor {<0.151.0>,ranch_listener_sup} had child ranch_acceptors_sup started with ranch_acceptors_sup:start_link(boss_http_listener, 100, ranch_tcp, [{port,8001},{ip,{0,0,0,0}}]) at <0.153.0> exit with reason shutdown in context child_terminated
+2014-07-21 09:30:33.747 [error] <0.418.0> GET /tools/index [tips] 404 0ms
+2014-07-21 09:30:34.308 [error] <0.151.0> Supervisor {<0.151.0>,ranch_listener_sup} had child ranch_conns_sup started with ranch_conns_sup:start_link(boss_http_listener, worker, ranch_tcp, cowboy_protocol) at <0.152.0> exit with reason killed in context child_terminated
+2014-07-21 09:30:34.312 [error] <0.420.0> CRASH REPORT Process <0.420.0> with 0 neighbours exited with reason: no match of right hand value {error,eaddrinuse} in ranch_acceptors_sup:init/1 line 38 in gen_server:init_it/6 line 330
+2014-07-21 09:30:34.313 [error] <0.151.0> Supervisor {<0.151.0>,ranch_listener_sup} had child ranch_acceptors_sup started with ranch_acceptors_sup:start_link(boss_http_listener, 100, ranch_tcp, [{port,8001},{ip,{0,0,0,0}}]) at undefined exit with reason no match of right hand value {error,eaddrinuse} in ranch_acceptors_sup:init/1 line 38 in context start_error
+2014-07-21 09:30:38.476 [error] <0.256.0> gen_server <0.256.0> terminated with reason: bad argument in call to erlang:list_to_atom(undefined) in boss_router_controller:route/2 line 172
+2014-07-21 09:30:38.476 [error] <0.256.0> CRASH REPORT Process <0.256.0> with 0 neighbours exited with reason: bad argument in call to erlang:list_to_atom(undefined) in boss_router_controller:route/2 line 172 in gen_server:terminate/6 line 746
+2014-07-21 09:30:38.477 [error] <0.255.0> Supervisor {<0.255.0>,boss_router_sup} had child router_controller started with boss_router_controller:start_link([{application,tips},{controllers,[]}]) at <0.256.0> exit with reason bad argument in call to erlang:list_to_atom(undefined) in boss_router_controller:route/2 line 172 in context child_terminated
+2014-07-21 09:30:38.477 [error] <0.526.0>@boss_web_controller_handle_request:handle_request:30 Unhandled Error: exit:{{badarg,[{erlang,list_to_atom,[undefined],[]},{boss_router_controller,route,2,[{file,"src/boss/boss_router_controller.erl"},{line,172}]},{boss_router_controller,handle_call,3,[{file,"src/boss/boss_router_controller.erl"},{line,64}]},{gen_server,handle_msg,5,[{file,"gen_server.erl"},{line,580}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,239}]}]},{gen_server,call,[<0.256.0>,{route,"/"}]}}. Stacktrace: [{gen_server,call,2,[{file,"gen_server.erl"},{line,182}]},{boss_web_controller_handle_request,process_dynamic_request,4,[{file,"src/boss/boss_web_controller_handle_request.erl"},{line,237}]},{boss_web_controller_handle_request,process_request,4,[{file,"src/boss/boss_web_controller_handle_request.erl"},{line,232}]},{boss_web_controller_handle_request,set_timer,7,[{file,"src/boss/boss_web_controller_handle_request.erl"},{line,148}]},{boss_web_controller_handle_request,build_dynamic_response,4,[{file,"src/boss/boss_web_controller_handle_request.erl"},{line,122}]},{boss_web_controller_handle_request,handle_request,3,[{file,"src/boss/boss_web_controller_handle_request.erl"},{line,26}]},{mochicow_upgrade,upgrade,4,[{file,"src/mochicow_upgrade.erl"},{line,72}]},{cowboy_protocol,execute,4,[{file,"src/cowboy_protocol.erl"},{line,529}]}]
