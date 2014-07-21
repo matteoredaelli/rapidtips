@@ -13,7 +13,7 @@ anagram('GET', []) ->
 anagram('POST', []) ->
     %%Word = Req:param("word"),
     Word = Req:post_param("word"),
-    ShortWord = lists:sublist(Word, 10),
+    ShortWord = lists:sublist(Word, 7),
     {ok, [{title, "Anagram"}, 
 	  {description, "Anagram"}, 
 	  {keywords, "anagram,permutation,anagramma,permutazione,parola,word"}, {words, perms(ShortWord)}]}.
