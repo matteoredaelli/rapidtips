@@ -22,5 +22,5 @@
 % 500 Internal Error handler (only invoked in production)
 % {500, [{controller, "world"}, {action, "calamity"}]}.
 
-{"/", [{controller, "home"}, {action, "index"}]}.
+{"/", [{controller, "tools"}, {action, "index"}]}.
 
