@@ -4,11 +4,14 @@
 perms([]) -> [[]];
 perms(L) -> [list_to_binary([H|T]) || H <- L, T <- perms(L--[H])].
 
+anagram_keywords() ->
+    <<"anagram,permutation,anagramma,anagramm,anagrama,字谜,anagramme,анаграмма">>.
+
 anagram('GET', []) ->
     %%{ok, []}.
     {ok, [{title, "Anagram"}, 
 	  {description, "Anagram"}, 
-	  {keywords, "anagram,permutation, anagramma,permutazione,parola,word"}]};
+	  {keywords, anagram_keywords()}]};
    
 anagram('POST', []) ->
     %%Word = Req:param("word"),
@@ -16,10 +19,11 @@ anagram('POST', []) ->
     ShortWord = lists:sublist(Word, 8),
     {ok, [{title, "Anagram"}, 
 	  {description, "Anagram"}, 
-	  {keywords, "anagram,permutation,anagramma,permutazione,parola,word"}, {words, perms(ShortWord)}]}.
+	  {keywords, anagram_keywords()}, 
+	  {words, perms(ShortWord)}]}.
 
 index('GET', []) ->
     {ok, [{title, "Home"},
           {description, "Opensource tools"},
-          {keywords, "opensource,tools,anagram"}]}.
+          {keywords, <<"opensource,tools">>}]}.
 

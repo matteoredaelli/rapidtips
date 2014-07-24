@@ -1,18 +1,18 @@
 {% extends "app.html" %}
 {% block content %}
 
-        <h1>Anagram</h1>
+        <h1>Anagram solver</h1>
         <p class="lead">An <a href="http://en.wikipedia.org/wiki/Anagram">Anagram</a> is a type of word play, the result of rearranging the letters of a word or phrase to produce a new word or phrase, using all the original letters exactly once [Wikipedia]
 
 	  <form  method="post">
 	    <input name="word" placeholder="Word" />
-	    <input class="btn btn-lg btn-success" type="submit" />
+	    <input class="btn btn-lg btn-success" type="submit" value="Anagram Solver" />
 	  </form>
 
 	</p>
 
 	{% if words %}
-	Results:<br /><br />
+	Anagrams:<br /><br />
 	<table>
 	  {% for word in words %}
 	  <tr>
@@ -37,5 +37,5 @@
 
 	{% endif %}
 
-        <br />You can develop by yourself a program for generating anagrams: see anagram source code at <a href="http://rosettacode.org/wiki/Anagrams">RosettaCode.org</a> 
+        <br />You can develop by yourself a program for generating anagrams: see anagram source codes at <a href="http://rosettacode.org/wiki/Anagrams">RosettaCode.org</a> 
 {% endblock %}
