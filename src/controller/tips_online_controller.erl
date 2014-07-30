@@ -1,4 +1,4 @@
--module(tips_tools_controller, [Req]).
+-module(tips_online_controller, [Req]).
 -compile(export_all).
 
 %% %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%

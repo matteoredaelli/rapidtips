@@ -1,0 +1,26 @@
+{% extends "app.html" %}
+{% block content %}
+    <p>Now is {{ today }}:
+	<ul>
+	  <li>Gregorian time: {{ gregorian_time }}</li>
+	  <li>Epoch time: {{ epoch_time }}</li>
+	</ul>
+</p>
+        <h1>Epoch Converter</h1>
+        <p class="lead">An <a href="http://en.wikipedia.org/wiki/Unix_time">Unix timestamp</a> (aka POSIX time or Epoch time), is a system for describing instants in time, defined as the number of seconds that have elapsed since 00:00:00 Coordinated Universal Time (UTC), Thursday, 1 January 1970 [Wikipedia]
+
+	  <form  method="post">
+	    <input name="unixtime" placeholder="{% if epochtime %}{{ epochtime }}{% else %}0{% endif %}" />
+	    <input class="btn btn-lg btn-success" type="submit" value="Converter to DateTime" />
+	  </form>
+
+	</p>
+
+	{% if datetime %}
+	<p>Epoch time {{ epochtime }} is {{ datetime }}</p>
+	{% endif %}
+
+        <p>
+	You can develop by yourself a program for generating anagrams: see anagram source codes at <a href="http://rosettacode.org/wiki/Anagrams">RosettaCode.org</a> 
+	</p>
+{% endblock %}
