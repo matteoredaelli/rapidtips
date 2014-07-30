@@ -62,7 +62,7 @@ epoch_converter('POST', []) ->
 %% %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 index('GET', []) ->
-    {ok, [{title, "Home"},
-          {description, "Opensource tools"},
+    {ok, [{title, "Rapid Tips"},
+          {description, "Opensource free online tools"},
           {keywords, <<"opensource,tools">>}]}.
 
